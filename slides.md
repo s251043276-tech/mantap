@@ -189,3 +189,17 @@ This scatterplot shows the relationship between height and weight, with points c
 <iframe data-src='media/plots/height_weight_scatterplot.html' width='100%' height='500px' style='border:none;'></iframe>
 :::
 ::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Key Statistics for Machine 1 (Temp 303, Pressure 100)
+
+This table summarizes the mean, median, and standard deviation for 'PartLength' and 'PartResistance' under specific operating conditions (Machine 1, Temperature 303, Pressure 100).
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine_stats_table.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
