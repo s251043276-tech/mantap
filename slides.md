@@ -231,3 +231,59 @@ This histogram displays the distribution of 'PartResistance', helping to underst
 <iframe data-src='media/plots/part_resistance_histogram.html' width='100%' height='500px' style='border:none;'></iframe>
 :::
 ::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Control Chart for Part Length
+
+This Individual and Moving Range (I-MR) control chart for 'PartLength' helps to monitor process stability over time. The Individual chart tracks individual data points, while the Moving Range chart monitors process variability.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/part_length_i_chart.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Control Chart for Part Resistance
+
+This Individual and Moving Range (I-MR) control chart for 'PartResistance' helps to monitor process stability over time. The Individual chart tracks individual data points, while the Moving Range chart monitors process variability.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/part_resistance_i_chart.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Moving Range Control Chart for Part Length
+
+This Moving Range (MR) chart for 'PartLength' monitors the process variability over time. It helps detect shifts in the process variation that the Individual chart might not catch. A stable MR chart indicates consistent process variation.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/part_length_mr_chart.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Moving Range Control Chart for Part Resistance
+
+This Moving Range (MR) chart for 'PartResistance' monitors the process variability over time. It helps detect shifts in the process variation that the Individual chart might not catch. A stable MR chart indicates consistent process variation.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/part_resistance_mr_chart.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
