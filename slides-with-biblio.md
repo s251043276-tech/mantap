@@ -301,3 +301,7 @@ This Individual Control Chart monitors 'PartLength' for Machine 1 under specific
 <iframe data-src='media/plots/machine1_partlength_i_chart_filtered.html' width='100%' height='500px' style='border:none;'></iframe>
 :::
 ::::
+
+---
+# Bibliography
+<div id="refs"></div>
