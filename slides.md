@@ -203,3 +203,31 @@ This table summarizes the mean, median, and standard deviation for 'PartLength' 
 <iframe data-src='media/plots/machine_stats_table.html' width='100%' height='500px' style='border:none;'></iframe>
 :::
 ::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Distribution of Part Length
+
+This histogram illustrates the frequency distribution of 'PartLength' in the dataset, providing insight into the typical lengths of the output parts.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/part_length_histogram.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Distribution of Part Resistance
+
+This histogram displays the distribution of 'PartResistance', helping to understand the variability and typical resistance values of the output product.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/part_resistance_histogram.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
