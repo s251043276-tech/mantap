@@ -183,6 +183,26 @@ This Xbar.one control chart monitors individual observations of 'PartLength' for
 :::
 ::::
 
+:::: {.columns}
+::: {.column width="50%"}
+### Xbar.one Control Chart for Part Length (Machine 1, 303K, 100kPa)
+
+This Xbar.one control chart monitors individual observations of 'PartLength' for Machine 1 under specific conditions (Temperature = 303K, Pressure = 100kPa). It helps to identify if the process is stable and within statistical control, based on the provided target and limits.
+
+**Parameters:**
+*   **Target:** 50
+*   **LSL:** 45
+*   **USL:** 55
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_temp303_pressure100_xbar_one_chart.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+
 ---
 # Bibliography
 <div id="refs"></div>
