@@ -51,9 +51,9 @@ if (length(chart_data) > 0) {
               yaxis = list(title = list(text = "Part Length", font = list(size = 18)), tickfont = list(size = 14)),
               plot_bgcolor = "white", 
               paper_bgcolor = "white")
-  saveWidget(p, file = "media/plots/machine1_temp338_pressure200_xbar_one_chart.html", selfcontained = TRUE)
+  saveWidget(p, file = file.path(plot_dir, "machine1_temp338_pressure200_xbar_one_chart.html"), selfcontained = TRUE)
 } else {
   p <- plot_ly() %>% layout(title = "No Data for Machine 1, Temp 338, Pressure 200",
                             xaxis = list(visible=F), yaxis = list(visible=F))
-  saveWidget(p, file = "media/plots/machine1_temp338_pressure200_xbar_one_chart.html", selfcontained = TRUE)
+  saveWidget(p, file = file.path(plot_dir, "machine1_temp338_pressure200_xbar_one_chart.html"), selfcontained = TRUE)
 }
