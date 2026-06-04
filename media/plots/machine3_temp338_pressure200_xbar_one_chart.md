@@ -1,41 +1,48 @@
-# Filter data for Machine 3, Temperature 338, Pressure 200
-data_filtered_machine3 <- X029...029 %>% filter(Machine == 3, Temperature == 338, Pressure == 200)
 
-# Create xbar.one chart for PartLength
-qcc_chart_m3 <- qcc(data_filtered_machine3$PartLength, type = "xbar.one", nsigmas = 3, plot = FALSE)
+# R code for Xbar.one Control Chart for Machine 3, Temp: 338K, Pressure: 200kPa
+library(tidyverse)
+library(plotly)
+library(qcc)
 
-# Extract relevant data for plotting from qcc_chart
-df_plot_m3 <- data.frame(
-  x = 1:length(qcc_chart_m3$data),
-  y = qcc_chart_m3$data,
-  cl = qcc_chart_m3$center,
-  lcl = qcc_chart_m3$limits[1],
-  ucl = qcc_chart_m3$limits[2]
+df_machine3_filtered <- X029...029 %>%
+  filter(Machine == 3, Temperature == 338, Pressure == 200)
+
+xbar_one_chart_machine3 <- qcc(df_machine3_filtered$PartLength,
+                               type = "xbar.one",
+                               std.dev = "MR",
+                               plot = FALSE,
+                               center = 50)
+
+# Extract data for plotting
+plot_data_machine3 <- data.frame(
+  Observation = 1:length(xbar_one_chart_machine3$data),
+  PartLength = xbar_one_chart_machine3$data,
+  UCL = xbar_one_chart_machine3$limits[2],
+  CL = xbar_one_chart_machine3$center,
+  LCL = xbar_one_chart_machine3$limits[1]
 )
 
-# Plot using ggplot2 and convert to plotly
-p_m3 <- ggplot(df_plot_m3, aes(x = x, y = y)) +
-  geom_line(color = "black") +
-  geom_point(aes(color = ifelse(y < lcl | y > ucl, "red", "black")), size = 2) +
-  geom_hline(aes(yintercept = cl, linetype = "CL"), color = "#0072B2", size = 0.8) +
-  geom_hline(aes(yintercept = lcl, linetype = "LCL"), color = "#D55E00", size = 0.8) +
-  geom_hline(aes(yintercept = ucl, linetype = "UCL"), color = "#D55E00", size = 0.8) +
-  scale_color_identity() +
-  scale_linetype_manual(name = "Limits", values = c("CL" = "solid", "LCL" = "dashed", "UCL" = "dashed"),
-                        labels = c("CL" = paste0("Center Line (", round(qcc_chart_m3$center, 2), ")"),
-                                   "LCL" = paste0("LCL (", round(qcc_chart_m3$limits[1], 2), ")"),
-                                   "UCL" = paste0("UCL (", round(qcc_chart_m3$limits[2], 2), ")"))) +
-  labs(title = "Xbar.one Control Chart for Part Length",
-       subtitle = "Machine 3, Temperature 338K, Pressure 200kPa",
-       x = "Observation",
-       y = "Part Length") +
+# Create ggplot object
+p_machine3 <- ggplot(plot_data_machine3, aes(x = Observation, y = PartLength)) +
+  geom_line(aes(y = PartLength), color = "#0072B2") +
+  geom_point(aes(y = PartLength), color = "#0072B2") +
+  geom_hline(aes(yintercept = UCL), color = "#D55E00", linetype = "dashed", linewidth = 1.0) +
+  geom_hline(aes(yintercept = CL), color = "#009E73", linetype = "solid", linewidth = 1.0) +
+  geom_hline(aes(yintercept = LCL), color = "#D55E00", linetype = "dashed", linewidth = 1.0) +
+  geom_hline(yintercept = 50, color = "#CC79A7", linetype = "dotted", linewidth = 1.0) + # Target
+  geom_hline(yintercept = 55, color = "grey", linetype = "dotted", linewidth = 1.0) + # USL
+  geom_hline(yintercept = 45, color = "grey", linetype = "dotted", linewidth = 1.0) + # LSL
+  annotate("text", x = max(plot_data_machine3$Observation) * 0.9, y = 50, label = "Target: 50", color = "#CC79A7", hjust = 0) +
+  annotate("text", x = max(plot_data_machine3$Observation) * 0.9, y = 55, label = "USL: 55", color = "grey", hjust = 0) +
+  annotate("text", x = max(plot_data_machine3$Observation) * 0.9, y = 45, label = "LSL: 45", color = "grey", hjust = 0) +
+  labs(title = "Xbar.one Chart for Part Length (Machine 3, Temp: 338K, Pressure: 200kPa)",
+       y = "Part Length",
+       x = "Observation") +
   theme_minimal() +
   theme(plot.title = element_text(size = 18),
         axis.title = element_text(size = 18),
         axis.text = element_text(size = 14),
-        legend.position = "bottom",
-        panel.background = element_rect(fill = "white", colour = "white"),
-        plot.background = element_rect(fill = "white", colour = "white"))
+        panel.background = element_rect(fill = "white", colour = "white"))
 
-p_plotly_m3 <- ggplotly(p_m3)
-saveWidget(p_plotly_m3, file = "media/plots/machine3_temp338_pressure200_xbar_one_chart.html", selfcontained = TRUE)
+plotly_chart_machine3 <- ggplotly(p_machine3)
+

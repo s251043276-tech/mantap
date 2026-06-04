@@ -1,59 +1,48 @@
-# Filter data for Machine 1, Temperature 338, Pressure 200
-filtered_data <- X029...029 %>% filter(Machine == 1, Temperature == 338, Pressure == 200)
 
-# Prepare control chart data
-chart_data <- filtered_data$PartLength
+# R code for Xbar.one Control Chart for Machine 1, Temp: 338K, Pressure: 200kPa
+library(tidyverse)
+library(plotly)
+library(qcc)
 
-# Define target and limits
-target_val <- 50
-lsl_val <- 45
-usl_val <- 55
+df_machine1_filtered <- X029...029 %>%
+  filter(Machine == 1, Temperature == 338, Pressure == 200)
 
-# Create xbar.one control chart
-if (length(chart_data) > 0) {
-  q <- qcc(chart_data, type = "xbar.one", plot = FALSE,
-           center = target_val, std.dev = sd(chart_data))
-  q$s.limits <- c(lsl_val, usl_val)
+xbar_one_chart_machine1 <- qcc(df_machine1_filtered$PartLength,
+                               type = "xbar.one",
+                               std.dev = "MR",
+                               plot = FALSE,
+                               center = 50)
 
-  df_plot <- data.frame(
-    Sample = 1:length(chart_data),
-    PartLength = chart_data,
-    Type = "Data Point"
-  )
+# Extract data for plotting
+plot_data_machine1 <- data.frame(
+  Observation = 1:length(xbar_one_chart_machine1$data),
+  PartLength = xbar_one_chart_machine1$data,
+  UCL = xbar_one_chart_machine1$limits[2],
+  CL = xbar_one_chart_machine1$center,
+  LCL = xbar_one_chart_machine1$limits[1]
+)
 
-  center_line <- q$center
-  lcl <- q$limits[1, "LCL"]
-  ucl <- q$limits[1, "UCL"]
+# Create ggplot object
+p_machine1 <- ggplot(plot_data_machine1, aes(x = Observation, y = PartLength)) +
+  geom_line(aes(y = PartLength), color = "#0072B2") +
+  geom_point(aes(y = PartLength), color = "#0072B2") +
+  geom_hline(aes(yintercept = UCL), color = "#D55E00", linetype = "dashed", linewidth = 1.0) +
+  geom_hline(aes(yintercept = CL), color = "#009E73", linetype = "solid", linewidth = 1.0) +
+  geom_hline(aes(yintercept = LCL), color = "#D55E00", linetype = "dashed", linewidth = 1.0) +
+  geom_hline(yintercept = 50, color = "#CC79A7", linetype = "dotted", linewidth = 1.0) + # Target
+  geom_hline(yintercept = 55, color = "grey", linetype = "dotted", linewidth = 1.0) + # USL
+  geom_hline(yintercept = 45, color = "grey", linetype = "dotted", linewidth = 1.0) + # LSL
+  annotate("text", x = max(plot_data_machine1$Observation) * 0.9, y = 50, label = "Target: 50", color = "#CC79A7", hjust = 0) +
+  annotate("text", x = max(plot_data_machine1$Observation) * 0.9, y = 55, label = "USL: 55", color = "grey", hjust = 0) +
+  annotate("text", x = max(plot_data_machine1$Observation) * 0.9, y = 45, label = "LSL: 45", color = "grey", hjust = 0) +
+  labs(title = "Xbar.one Chart for Part Length (Machine 1, Temp: 338K, Pressure: 200kPa)",
+       y = "Part Length",
+       x = "Observation") +
+  theme_minimal() +
+  theme(plot.title = element_text(size = 18),
+        axis.title = element_text(size = 18),
+        axis.text = element_text(size = 14),
+        panel.background = element_rect(fill = "white", colour = "white"))
 
-  g <- ggplot(df_plot, aes(x = Sample, y = PartLength)) +
-    geom_point(aes(text = paste("Sample:", Sample, "<br>Part Length:", PartLength)), color = "#0072B2", size = 2) +
-    geom_line(color = "#0072B2") +
-    geom_hline(yintercept = center_line, linetype = "dashed", color = "#D55E00", linewidth = 1, aes(text = paste("Center Line:", center_line))) +
-    geom_hline(yintercept = lcl, linetype = "solid", color = "#CC79A7", linewidth = 1, aes(text = paste("Lower Control Limit:", lcl))) +
-    geom_hline(yintercept = ucl, linetype = "solid", color = "#CC79A7", linewidth = 1, aes(text = paste("Upper Control Limit:", ucl))) +
-    geom_hline(yintercept = lsl_val, linetype = "dotdash", color = "gray", linewidth = 1, aes(text = paste("Lower Spec Limit:", lsl_val))) +
-    geom_hline(yintercept = usl_val, linetype = "dotdash", color = "gray", linewidth = 1, aes(text = paste("Upper Spec Limit:", usl_val))) +
-    labs(title = "Xbar.one Control Chart for Part Length (Machine 1, 338K, 200kPa)",
-         x = "Sample", y = "Part Length") +
-    theme_minimal() +
-    theme(plot.title = element_text(size = 20, face = "bold"),
-          axis.title.x = element_text(size = 18), 
-          axis.title.y = element_text(size = 18),
-          axis.text.x = element_text(size = 14),
-          axis.text.y = element_text(size = 14),
-          panel.background = element_rect(fill = "white", colour = "white"),
-          plot.background = element_rect(fill = "white", colour = "white"))
+plotly_chart_machine1 <- ggplotly(p_machine1)
 
-  p <- ggplotly(g, tooltip = "text")
-
-  p <- layout(p, 
-              xaxis = list(title = list(text = "Sample", font = list(size = 18)), tickfont = list(size = 14)),
-              yaxis = list(title = list(text = "Part Length", font = list(size = 18)), tickfont = list(size = 14)),
-              plot_bgcolor = "white", 
-              paper_bgcolor = "white")
-  saveWidget(p, file = file.path(plot_dir, "machine1_temp338_pressure200_xbar_one_chart.html"), selfcontained = TRUE)
-} else {
-  p <- plot_ly() %>% layout(title = "No Data for Machine 1, Temp 338, Pressure 200",
-                            xaxis = list(visible=F), yaxis = list(visible=F))
-  saveWidget(p, file = file.path(plot_dir, "machine1_temp338_pressure200_xbar_one_chart.html"), selfcontained = TRUE)
-}
