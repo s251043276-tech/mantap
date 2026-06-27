@@ -101,3 +101,27 @@ As indicated by the previous t-test (p-value = 0), there is a statistically sign
 <iframe data-src='media/plots/machine1_vs_machine2_boxplot.html' width='100%%' height='500px' style='border:none;'></iframe>
 :::
 ::::
+
+----
+
+:::: {{.columns}}
+::: {{.column width="50%"}}
+### T-Test: Part Resistance (Machine 1 vs. Machine 2, P=300, T=373)
+
+We performed an independent two-sample t-test to compare the 'PartResistance' of products from Machine 1 and Machine 2 under specific operating conditions:
+
+*   **Pressure:** 300kPa
+*   **Temperature:** 373K
+
+The p-value obtained from this test indicates the probability of observing such a difference (or more extreme) in part resistance between the two machines, assuming there is no actual difference.
+
+**Observed P-value:** <span style="color:#D55E00; font-weight:bold;">0.0000</span>
+
+**Interpretation:** Based on this p-value, we can assess whether there is a statistically significant difference in part resistance between Machine 1 and Machine 2 under these conditions.
+
+:::
+
+::: {{.column width="50%"}}
+<iframe data-src='media/plots/machine1_vs_machine2_t_test_p300_t373_p_value.md' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
