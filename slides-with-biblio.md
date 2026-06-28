@@ -597,6 +597,90 @@ The p-value indicates the probability of observing the given difference in part 
 :::
 ::::
 
+-----
+
+:::: {.columns}
+::: {.column width="50%"}
+### T-test for Part Length (Machine 1 vs Machine 2, P=100, T=303)
+
+We performed an independent samples t-test to compare the 'PartLength' between 'Machine 1' and 'Machine 2' under specific operating conditions (Pressure = 100kPa, Temperature = 303K).
+
+This test helps determine if there is a statistically significant difference in the mean part length produced by the two machines under these conditions.
+
+**Analysis Details:**
+*   **Dataset:** Filtered `X029___029` for `Pressure == 100`, `Temperature == 303`, and `Machine` in `(1, 2)`
+*   **Dependent Variable:** `PartLength`
+*   **Independent Variable:** `Machine`
+
+**Observed P-value for Comparison:** <span style="color:#D55E00; font-weight:bold;">N/A</span>
+
+**Interpretation:**
+*   If p-value < 0.05: There is a statistically significant difference in part length between Machine 1 and Machine 2 under these conditions.
+*   If p-value >= 0.05: There is no statistically significant difference in part length between Machine 1 and Machine 2 under these conditions.
+
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_vs_machine2_t_test_p100_t303_p_value.md' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+-----
+
+:::: {.columns}
+::: {.column width="50%"}
+### T-test for Part Length (Machine 1 vs Machine 2, P=100, T=303)
+
+We performed an independent samples t-test to compare the 'PartLength' between 'Machine 1' and 'Machine 2' under specific operating conditions (Pressure = 100kPa, Temperature = 303K).
+
+This test helps determine if there is a statistically significant difference in the mean part length produced by the two machines under these conditions.
+
+**Analysis Details:**
+*   **Dataset:** Filtered `X029___029` for `Pressure == 100`, `Temperature == 303`, and `Machine` in `(1, 2)`
+*   **Dependent Variable:** `PartLength`
+*   **Independent Variable:** `Machine`
+
+**Observed P-value for Comparison:** <span style="color:#D55E00; font-weight:bold;">0.0000</span>
+
+**Interpretation:**
+*   If p-value < 0.05: There is a statistically significant difference in part length between Machine 1 and Machine 2 under these conditions.
+*   If p-value >= 0.05: There is no statistically significant difference in part length between Machine 1 and Machine 2 under these conditions.
+
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_vs_machine2_t_test_p100_t303_p_value.md' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+-----
+
+:::: {.columns}
+::: {.column width="50%"}
+### T-test for Part Length (Machine 1 vs Machine 2, P=100, T=303)
+
+We performed an independent samples t-test to compare the 'PartLength' between 'Machine 1' and 'Machine 2' under specific operating conditions (Pressure = 100kPa, Temperature = 303K).
+
+This test helps determine if there is a statistically significant difference in the mean part length produced by the two machines under these conditions.
+
+**Analysis Details:**
+*   **Dataset:** Filtered `X029___029` for `Pressure == 100`, `Temperature == 303`, and `Machine` in `(1, 2)`
+*   **Dependent Variable:** `PartLength`
+*   **Independent Variable:** `Machine`
+
+**Observed P-value for Comparison:** <span style="color:#D55E00; font-weight:bold;">0.0000</span>
+
+**Interpretation:**
+*   If p-value < 0.05: There is a statistically significant difference in part length between Machine 1 and Machine 2 under these conditions.
+*   If p-value >= 0.05: There is no statistically significant difference in part length between Machine 1 and Machine 2 under these conditions.
+
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_vs_machine2_t_test_p100_t303_p_value.md' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
 ---
 # Bibliography
 <div id="refs"></div>
