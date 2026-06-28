@@ -799,3 +799,25 @@ This Xbar.one control chart monitors individual observations of 'PartResistance'
 <iframe data-src='media/plots/machine1_resistance_xbar_one_chart.html' width='100%' height='500px' style='border:none;'></iframe>
 :::
 ::::
+-----
+
+:::: {.columns}
+::: {.column width="50%"}
+### Part Resistance Distribution by Pressure and Temperature (Machine 1)
+
+This box plot illustrates the distribution of 'PartResistance' across different levels of 'Pressure' and 'Temperature' specifically for 'Machine 1'. It helps us visually identify how these two factors, both individually and in combination, influence the measured part resistance.
+
+**Observations:**
+*   Each box represents the interquartile range (IQR) of Part Resistance for a given Pressure and Temperature combination.
+*   The line inside the box indicates the median Part Resistance.
+*   The whiskers extend to 1.5 times the IQR from the box, capturing the spread of the data.
+*   Points beyond the whiskers are considered outliers.
+
+This visualization allows for a quick comparison of central tendencies and variances under various operational conditions.
+
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_resistance_pressure_temperature_boxplot.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
