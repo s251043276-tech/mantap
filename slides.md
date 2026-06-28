@@ -749,3 +749,30 @@ This plot helps to visually confirm the statistical significance found in the AN
 <iframe data-src='media/plots/machine1_resistance_boxplot_by_temperature.html' width='100%' height='500px' style='border:none;'></iframe>
 :::
 ::::
+
+-----
+
+:::: {.columns}
+::: {.column width="50%"}
+### ANOVA for Part Resistance vs. Pressure*Temperature Interaction (Machine 1)
+
+We performed an Analysis of Variance (ANOVA) to determine the statistical significance of the interaction between 'Pressure' and 'Temperature' on 'PartResistance' specifically for 'Machine 1'. This analysis considers how the effect of pressure on part resistance might change depending on the temperature, and vice versa.
+
+**Analysis Details:**
+*   **Dataset:** Filtered `X029___029` for `Machine == 1`
+*   **Dependent Variable:** `PartResistance`
+*   **Independent Variables:** `Pressure` (as a factor) and `Temperature` (as a factor), including their interaction.
+*   **Upper Specification Limit (USL) for Part Resistance:** 10 (Lower is better)
+
+**Observed P-value for Pressure:Temperature Interaction:** <span style="color:#0072B2; font-weight:bold;">0.1916</span>
+
+**Interpretation:**
+*   If p-value < 0.05: There is a statistically significant interaction effect, meaning the effect of Pressure on PartResistance depends on the Temperature, or vice versa.
+*   If p-value >= 0.05: There is no statistically significant interaction effect.
+
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_resistance_pressure_temperature_interaction_anova_pvalue.md' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::

@@ -865,6 +865,40 @@ USL of 10.</p>
 </div>
 </div>
 </section>
+<section class="slide level1">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3
+id="anova-for-part-resistance-vs.-pressuretemperature-interaction-machine-1">ANOVA
+for Part Resistance vs. Pressure*Temperature Interaction (Machine
+1)</h3>
+<p>We performed an Analysis of Variance (ANOVA) to determine the
+statistical significance of the interaction between ‘Pressure’ and
+‘Temperature’ on ‘PartResistance’ specifically for ‘Machine 1’. This
+analysis considers how the effect of pressure on part resistance might
+change depending on the temperature, and vice versa.</p>
+<p><strong>Analysis Details:</strong> * <strong>Dataset:</strong>
+Filtered <code>X029___029</code> for <code>Machine == 1</code> *
+<strong>Dependent Variable:</strong> <code>PartResistance</code> *
+<strong>Independent Variables:</strong> <code>Pressure</code> (as a
+factor) and <code>Temperature</code> (as a factor), including their
+interaction. * <strong>Upper Specification Limit (USL) for Part
+Resistance:</strong> 10 (Lower is better)</p>
+<p><strong>Observed P-value for Pressure:Temperature
+Interaction:</strong> <span
+style="color:#0072B2; font-weight:bold;">0.1916</span></p>
+<p><strong>Interpretation:</strong> * If p-value &lt; 0.05: There is a
+statistically significant interaction effect, meaning the effect of
+Pressure on PartResistance depends on the Temperature, or vice versa. *
+If p-value &gt;= 0.05: There is no statistically significant interaction
+effect.</p>
+</div><div class="column" style="width:50%;">
+<iframe data-src="media/plots/machine1_resistance_pressure_temperature_interaction_anova_pvalue.md" width="100%" height="500px" style="border:none;">
+</iframe>
+</div>
+</div>
+</section>
 <section id="bibliography" class="slide level1">
 <h1>Bibliography</h1>
 <div id="refs" role="list">
