@@ -777,6 +777,30 @@ We performed an Analysis of Variance (ANOVA) to determine the statistical signif
 :::
 ::::
 
+-----
+
+:::: {.columns}
+::: {.column width="50%"}
+### Xbar.one Control Chart for Part Resistance (Machine 1)
+
+This Xbar.one control chart monitors individual observations of 'PartResistance' for Machine 1. It helps to assess process stability over time.
+
+**Key Features:**
+*   **Center Line (CL):** Represents the average part resistance.
+*   **Upper Control Limit (UCL) & Lower Control Limit (LCL):** Define the expected range of variation for individual observations when the process is in statistical control.
+*   **Upper Specification Limit (USL):** The maximum allowable value for part resistance (set at 10). Lower resistance is better.
+
+**Interpretation:**
+*   Points outside the control limits (UCL/LCL) indicate an out-of-control condition, suggesting a special cause of variation.
+*   Points above the USL indicate non-conforming products.
+
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_resistance_xbar_one_chart.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
 ---
 # Bibliography
 <div id="refs"></div>
