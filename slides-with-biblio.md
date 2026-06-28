@@ -261,6 +261,341 @@ This Xbar.one control chart monitors individual observations of 'PartLength' for
 :::
 ::::
 
+----
+
+:::: {.columns}
+::: {.column width="50%"}
+### ANOVA for Part Resistance vs. Pressure (Machine 1)
+
+We performed an Analysis of Variance (ANOVA) to determine the statistical significance of 'Pressure' on 'PartResistance' specifically for 'Machine 1'. In this analysis, 'Pressure' was treated as a categorical factor.
+
+The p-value indicates the probability of observing the given difference in part resistance across different pressure levels (or a more extreme difference), assuming there is no actual effect of pressure.
+
+**Analysis Details:**
+*   **Dataset:** Filtered `X029___029` for `Machine == 1`
+*   **Dependent Variable:** `PartResistance`
+*   **Independent Variable:** `Pressure` (as a factor)
+
+**Observed P-value for Pressure:** <span style="color:#0072B2; font-weight:bold;">N/A</span>
+
+**Interpretation:**
+*   If p-value < 0.05: There is a statistically significant effect of pressure on part resistance for Machine 1.
+*   If p-value >= 0.05: There is no statistically significant effect of pressure on part resistance for Machine 1.
+
+::: 
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_resistance_pressure_anova_pvalue.md' width='100%' height='500px' style='border:none;'></iframe>
+::: 
+::::
+
+----
+
+:::: {.columns}
+::: {.column width="50%"}
+### ANOVA for Part Resistance vs. Pressure (Machine 1)
+
+We performed an Analysis of Variance (ANOVA) to determine the statistical significance of 'Pressure' on 'PartResistance' specifically for 'Machine 1'. In this analysis, 'Pressure' was treated as a categorical factor.
+
+The p-value indicates the probability of observing the given difference in part resistance across different pressure levels (or a more extreme difference), assuming there is no actual effect of pressure.
+
+**Analysis Details:**
+*   **Dataset:** Filtered `X029___029` for `Machine == 1`
+*   **Dependent Variable:** `PartResistance`
+*   **Independent Variable:** `Pressure` (as a factor)
+
+**Observed P-value for Pressure:** <span style="color:#0072B2; font-weight:bold;">N/A</span>
+
+**Interpretation:**
+*   If p-value < 0.05: There is a statistically significant effect of pressure on part resistance for Machine 1.
+*   If p-value >= 0.05: There is no statistically significant effect of pressure on part resistance for Machine 1.
+
+::: 
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_resistance_pressure_anova_pvalue.md' width='100%' height='500px' style='border:none;'></iframe>
+::: 
+::::
+
+----
+
+:::: {.columns}
+::: {.column width="50%"}
+### ANOVA for Part Resistance vs. Pressure (Machine 1)
+
+We performed an Analysis of Variance (ANOVA) to determine the statistical significance of 'Pressure' on 'PartResistance' specifically for 'Machine 1'. In this analysis, 'Pressure' was treated as a categorical factor.
+
+The p-value indicates the probability of observing the given difference in part resistance across different pressure levels (or a more extreme difference), assuming there is no actual effect of pressure.
+
+**Analysis Details:**
+*   **Dataset:** Filtered `X029___029` for `Machine == 1`
+*   **Dependent Variable:** `PartResistance`
+*   **Independent Variable:** `Pressure` (as a factor)
+
+**Observed P-value for Pressure:** <span style="color:#0072B2; font-weight:bold;">N/A</span>
+
+**Interpretation:**
+*   If p-value < 0.05: There is a statistically significant effect of pressure on part resistance for Machine 1.
+*   If p-value >= 0.05: There is no statistically significant effect of pressure on part resistance for Machine 1.
+
+::: 
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_resistance_pressure_anova_pvalue.md' width='100%' height='500px' style='border:none;'></iframe>
+::: 
+::::
+
+----
+
+:::: {.columns}
+::: {.column width="50%"}
+### ANOVA for Part Resistance vs. Pressure (Machine 1)
+
+We performed an Analysis of Variance (ANOVA) to determine the statistical significance of 'Pressure' on 'PartResistance' specifically for 'Machine 1'. In this analysis, 'Pressure' was treated as a categorical factor.
+
+The p-value indicates the probability of observing the given difference in part resistance across different pressure levels (or a more extreme difference), assuming there is no actual effect of pressure.
+
+**Analysis Details:**
+*   **Dataset:** Filtered `X029___029` for `Machine == 1`
+*   **Dependent Variable:** `PartResistance`
+*   **Independent Variable:** `Pressure` (as a factor)
+
+**Observed P-value for Pressure:** <span style="color:#0072B2; font-weight:bold;">N/A</span>
+
+**Interpretation:**
+*   If p-value < 0.05: There is a statistically significant effect of pressure on part resistance for Machine 1.
+*   If p-value >= 0.05: There is no statistically significant effect of pressure on part resistance for Machine 1.
+
+::: 
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_resistance_pressure_anova_pvalue.md' width='100%' height='500px' style='border:none;'></iframe>
+::: 
+::::
+
+----
+
+:::: {.columns}
+::: {.column width="50%"}
+### ANOVA for Part Resistance vs. Pressure (Machine 1)
+
+We performed an Analysis of Variance (ANOVA) to determine the statistical significance of 'Pressure' on 'PartResistance' specifically for 'Machine 1'. In this analysis, 'Pressure' was treated as a categorical factor.
+
+The p-value indicates the probability of observing the given difference in part resistance across different pressure levels (or a more extreme difference), assuming there is no actual effect of pressure.
+
+**Analysis Details:**
+*   **Dataset:** Filtered `X029___029` for `Machine == 1`
+*   **Dependent Variable:** `PartResistance`
+*   **Independent Variable:** `Pressure` (as a factor)
+
+**Observed P-value for Pressure:** <span style="color:#0072B2; font-weight:bold;">N/A</span>
+
+**Interpretation:**
+*   If p-value < 0.05: There is a statistically significant effect of pressure on part resistance for Machine 1.
+*   If p-value >= 0.05: There is no statistically significant effect of pressure on part resistance for Machine 1.
+
+::: 
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_resistance_pressure_anova_pvalue.md' width='100%' height='500px' style='border:none;'></iframe>
+::: 
+::::
+
+----
+
+:::: {.columns}
+::: {.column width="50%"}
+### ANOVA for Part Resistance vs. Pressure (Machine 1)
+
+We performed an Analysis of Variance (ANOVA) to determine the statistical significance of 'Pressure' on 'PartResistance' specifically for 'Machine 1'. In this analysis, 'Pressure' was treated as a categorical factor.
+
+The p-value indicates the probability of observing the given difference in part resistance across different pressure levels (or a more extreme difference), assuming there is no actual effect of pressure.
+
+**Analysis Details:**
+*   **Dataset:** Filtered `X029___029` for `Machine == 1`
+*   **Dependent Variable:** `PartResistance`
+*   **Independent Variable:** `Pressure` (as a factor)
+
+**Observed P-value for Pressure:** <span style="color:#0072B2; font-weight:bold;">N/A</span>
+
+**Interpretation:**
+*   If p-value < 0.05: There is a statistically significant effect of pressure on part resistance for Machine 1.
+*   If p-value >= 0.05: There is no statistically significant effect of pressure on part resistance for Machine 1.
+
+::: 
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_resistance_pressure_anova_pvalue.md' width='100%' height='500px' style='border:none;'></iframe>
+::: 
+::::
+
+-----
+
+:::: {.columns}
+::: {.column width="50%"}
+### ANOVA for Part Resistance vs. Pressure (Machine 1)
+
+We performed an Analysis of Variance (ANOVA) to determine the statistical significance of 'Pressure' on 'PartResistance' specifically for 'Machine 1'. In this analysis, 'Pressure' was treated as a categorical factor.
+
+The p-value indicates the probability of observing the given difference in part resistance across different pressure levels (or a more extreme difference), assuming there is no actual effect of pressure.
+
+**Analysis Details:**
+*   **Dataset:** Filtered `X029___029` for `Machine == 1`
+*   **Dependent Variable:** `PartResistance`
+*   **Independent Variable:** `Pressure` (as a factor)
+
+**Observed P-value for Pressure:** <span style="color:#0072B2; font-weight:bold;">N/A</span>
+
+**Interpretation:**
+*   If p-value < 0.05: There is a statistically significant effect of pressure on part resistance for Machine 1.
+*   If p-value >= 0.05: There is no statistically significant effect of pressure on part resistance for Machine 1.
+
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_resistance_pressure_anova_pvalue.md' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+-----
+
+:::: {.columns}
+::: {.column width="50%"}
+### ANOVA for Part Resistance vs. Pressure (Machine 1)
+
+We performed an Analysis of Variance (ANOVA) to determine the statistical significance of 'Pressure' on 'PartResistance' specifically for 'Machine 1'. In this analysis, 'Pressure' was treated as a categorical factor.
+
+The p-value indicates the probability of observing the given difference in part resistance across different pressure levels (or a more extreme difference), assuming there is no actual effect of pressure.
+
+**Analysis Details:**
+*   **Dataset:** Filtered `X029___029` for `Machine == 1`
+*   **Dependent Variable:** `PartResistance`
+*   **Independent Variable:** `Pressure` (as a factor)
+
+**Observed P-value for Pressure:** <span style="color:#0072B2; font-weight:bold;">0.0000</span>
+
+**Interpretation:**
+*   If p-value < 0.05: There is a statistically significant effect of pressure on part resistance for Machine 1.
+*   If p-value >= 0.05: There is no statistically significant effect of pressure on part resistance for Machine 1.
+
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_resistance_pressure_anova_pvalue.md' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+-----
+
+:::: {.columns}
+::: {.column width="50%"}
+### ANOVA for Part Resistance vs. Pressure (Machine 1)
+
+We performed an Analysis of Variance (ANOVA) to determine the statistical significance of 'Pressure' on 'PartResistance' specifically for 'Machine 1'. In this analysis, 'Pressure' was treated as a categorical factor.
+
+The p-value indicates the probability of observing the given difference in part resistance across different pressure levels (or a more extreme difference), assuming there is no actual effect of pressure.
+
+**Analysis Details:**
+*   **Dataset:** Filtered `X029___029` for `Machine == 1`
+*   **Dependent Variable:** `PartResistance`
+*   **Independent Variable:** `Pressure` (as a factor)
+
+**Observed P-value for Pressure:** <span style="color:#0072B2; font-weight:bold;">0.0000</span>
+
+**Interpretation:**
+*   If p-value < 0.05: There is a statistically significant effect of pressure on part resistance for Machine 1.
+*   If p-value >= 0.05: There is no statistically significant effect of pressure on part resistance for Machine 1.
+
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_resistance_pressure_anova_pvalue.md' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+-----
+
+:::: {.columns}
+::: {.column width="50%"}
+### ANOVA for Part Resistance vs. Pressure (Machine 1)
+
+We performed an Analysis of Variance (ANOVA) to determine the statistical significance of 'Pressure' on 'PartResistance' specifically for 'Machine 1'. In this analysis, 'Pressure' was treated as a categorical factor.
+
+The p-value indicates the probability of observing the given difference in part resistance across different pressure levels (or a more extreme difference), assuming there is no actual effect of pressure.
+
+**Analysis Details:**
+*   **Dataset:** Filtered `X029___029` for `Machine == 1`
+*   **Dependent Variable:** `PartResistance`
+*   **Independent Variable:** `Pressure` (as a factor)
+
+**Observed P-value for Pressure:** <span style="color:#0072B2; font-weight:bold;">0.0000</span>
+
+**Interpretation:**
+*   If p-value < 0.05: There is a statistically significant effect of pressure on part resistance for Machine 1.
+*   If p-value >= 0.05: There is no statistically significant effect of pressure on part resistance for Machine 1.
+
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_resistance_pressure_anova_pvalue.md' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+-----
+
+:::: {.columns}
+::: {.column width="50%"}
+### ANOVA for Part Resistance vs. Pressure (Machine 1)
+
+We performed an Analysis of Variance (ANOVA) to determine the statistical significance of 'Pressure' on 'PartResistance' specifically for 'Machine 1'. In this analysis, 'Pressure' was treated as a categorical factor.
+
+The p-value indicates the probability of observing the given difference in part resistance across different pressure levels (or a more extreme difference), assuming there is no actual effect of pressure.
+
+**Analysis Details:**
+*   **Dataset:** Filtered `X029___029` for `Machine == 1`
+*   **Dependent Variable:** `PartResistance`
+*   **Independent Variable:** `Pressure` (as a factor)
+
+**Observed P-value for Pressure:** <span style="color:#0072B2; font-weight:bold;">0.0000</span>
+
+**Interpretation:**
+*   If p-value < 0.05: There is a statistically significant effect of pressure on part resistance for Machine 1.
+*   If p-value >= 0.05: There is no statistically significant effect of pressure on part resistance for Machine 1.
+
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_resistance_pressure_anova_pvalue.md' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+-----
+
+:::: {.columns}
+::: {.column width="50%"}
+### ANOVA for Part Resistance vs. Pressure (Machine 1)
+
+We performed an Analysis of Variance (ANOVA) to determine the statistical significance of 'Pressure' on 'PartResistance' specifically for 'Machine 1'. In this analysis, 'Pressure' was treated as a categorical factor.
+
+The p-value indicates the probability of observing the given difference in part resistance across different pressure levels (or a more extreme difference), assuming there is no actual effect of pressure.
+
+**Analysis Details:**
+*   **Dataset:** Filtered `X029___029` for `Machine == 1`
+*   **Dependent Variable:** `PartResistance`
+*   **Independent Variable:** `Pressure` (as a factor)
+
+**Observed P-value for Pressure:** <span style="color:#0072B2; font-weight:bold;">0.0000</span>
+
+**Interpretation:**
+*   If p-value < 0.05: There is a statistically significant effect of pressure on part resistance for Machine 1.
+*   If p-value >= 0.05: There is no statistically significant effect of pressure on part resistance for Machine 1.
+
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_resistance_pressure_anova_pvalue.md' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
 
 ---
 # Bibliography
