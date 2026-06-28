@@ -680,3 +680,72 @@ This test helps determine if there is a statistically significant difference in 
 <iframe data-src='media/plots/machine1_vs_machine2_t_test_p100_t303_p_value.md' width='100%' height='500px' style='border:none;'></iframe>
 :::
 ::::
+
+-----
+
+:::: {.columns}
+::: {.column width="50%"}
+### ANOVA for Part Resistance vs. Temperature (Machine 1)
+
+We performed an Analysis of Variance (ANOVA) to determine the statistical significance of 'Temperature' on 'PartResistance' specifically for 'Machine 1'. In this analysis, 'Temperature' was treated as a categorical factor.
+
+**Analysis Details:**
+*   **Dataset:** Filtered `X029___029` for `Machine == 1`
+*   **Dependent Variable:** `PartResistance`
+*   **Independent Variable:** `Temperature` (as a factor)
+*   **Upper Specification Limit (USL) for Part Resistance:** 10 (Lower is better)
+
+**Observed P-value for Temperature:** <span style="color:#009E73; font-weight:bold;">0.8790</span>
+
+**Interpretation:**
+*   If p-value < 0.05: There is a statistically significant effect of temperature on part resistance for Machine 1.
+*   If p-value >= 0.05: There is no statistically significant effect of temperature on part resistance for Machine 1.
+
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_resistance_temperature_anova_pvalue.md' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+-----
+
+:::: {.columns}
+::: {.column width="50%"}
+### Boxplot: Part Resistance by Pressure (Machine 1)
+
+This boxplot visualizes the distribution of 'PartResistance' for 'Machine 1' across different 'Pressure' levels. The Upper Specification Limit (USL) of 10 for resistance is indicated by a dashed red line. Lower resistance values are preferable.
+
+This plot helps to visually confirm the statistical significance found in the ANOVA for pressure and identify which pressure levels tend to produce higher or lower resistance.
+
+**Observations:**
+*   Examine the median (line inside the box), interquartile range (box), and outliers (points outside whiskers) for each pressure level.
+*   Compare the distributions relative to the USL of 10.
+
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_resistance_boxplot_by_pressure.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+-----
+
+:::: {.columns}
+::: {.column width="50%"}
+### Boxplot: Part Resistance by Temperature (Machine 1)
+
+This boxplot visualizes the distribution of 'PartResistance' for 'Machine 1' across different 'Temperature' levels. The Upper Specification Limit (USL) of 10 for resistance is indicated by a dashed red line. Lower resistance values are preferable.
+
+This plot helps to visually confirm the statistical significance found in the ANOVA for temperature and identify which temperature levels tend to produce higher or lower resistance.
+
+**Observations:**
+*   Examine the median (line inside the box), interquartile range (box), and outliers (points outside whiskers) for each temperature level.
+*   Compare the distributions relative to the USL of 10.
+
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/machine1_resistance_boxplot_by_temperature.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
